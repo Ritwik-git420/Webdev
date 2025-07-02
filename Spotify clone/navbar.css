@@ -1,0 +1,97 @@
+* {
+    margin: 2px 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 75px;
+    width: 100%;
+    background: black;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.search {
+    height: 100%;
+    width: 70%;
+    justify-self: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-self: end;
+}
+
+.search span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+    background-color: #1A1A1A;
+}
+
+.search span img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+#s1 {
+    flex: 1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    height: 36px;
+    background-color: #2A2A2A;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    width: 80%;
+    height: 45px;
+}
+
+.navitems {
+    gap: 10px;
+    justify-self: center;
+    height: 100%;
+    align-items: center;
+    width: 85%;
+}
+
+.navitems .login {
+    display: flex;
+
+}
+
+.inst {
+    position: relative;
+    gap: 3px;
+}
+
+.inst img {
+    align-self: center;
+    top: 2px;
+    width: 16px;
+    object-fit: contain;
+    display: block;
+}
+.rsptxt{
+    transition: transform 3s ease-in-out;
+    will-change: transform;
+}
+.rsptxt:hover{
+    transform: scale(1.07);
+}
